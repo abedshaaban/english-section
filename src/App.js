@@ -1,17 +1,27 @@
 import "./App.css";
 import Tooltip from "@mui/material/Tooltip";
+// LS
+import healthAndNutritionLS from "./presentations/LS/Health-and-Nutrition.pdf";
+import healthAndNutritionIMGLS from "./presentations/LS/img/health-and-nutrition.PNG";
 
-import healthAndNutrition from "./presentations/Health-and-Nutrition.pdf";
-import healthAndNutritionIMG from "./presentations/img/health-and-nutrition.PNG";
+import humanRightsAndValueLS from "./presentations/LS/Human-Rights-and-Values.pdf";
+import humanRightsAndValueIMGLS from "./presentations/LS/img/human-rights-and-values.PNG";
 
-import humanRightsAndValue from "./presentations/Human-Rights-and-Values.pdf";
-import humanRightsAndValueIMG from "./presentations/img/human-rights-and-values.PNG";
+import naturalPhenomenaLS from "./presentations/LS/natural-phenomena.pdf";
+import naturalPhenomenaIMGLS from "./presentations/LS/img/natural-phenomena.PNG";
 
-import naturalPhenomena from "./presentations/natural-phenomena.pdf";
-import naturalPhenomenaIMG from "./presentations/img/natural-phenomena.PNG";
+import teenagersLS from "./presentations/LS/teenagers.pdf";
+import teenagersIMGLS from "./presentations/LS/img/teenagers.PNG";
 
-import teenagers from "./presentations/teenagers.pdf";
-import teenagersIMG from "./presentations/img/teenagers.PNG";
+// GS
+import democracyGS from "./presentations/GS/democracy.pdf";
+import democracyIMGGS from "./presentations/GS/img/democracy.PNG";
+
+import humanvaluesGS from "./presentations/GS/human-values.pdf";
+import humanvaluesIMGGS from "./presentations/GS/img/human-values.PNG";
+
+import teenagersGS from "./presentations/GS/teenagers.pdf";
+import teenagersIMGGS from "./presentations/GS/img/teenagers.PNG";
 
 function App() {
   return (
@@ -20,11 +30,23 @@ function App() {
         <div class="ball"></div>
       </div>
       <section className="S">
+        {/* democracy LS GS */}
+
         <div className="div_box z2">
-          <a href={healthAndNutrition} target="_blank" rel="noreferrer">
-            <Tooltip title="Health And Nutrition" placement="right" arrow>
+          <a href={democracyGS} target="_blank" rel="noreferrer">
+            <Tooltip title="GS Democracy" placement="right" arrow>
+              <img src={democracyIMGGS} alt="Teenagers" className="box" />
+            </Tooltip>
+          </a>
+          <span className="span">Done by: (GS)</span>
+        </div>
+
+        {/* Health And Nutrition LS GS */}
+        <div className="div_box z2">
+          <a href={healthAndNutritionLS} target="_blank" rel="noreferrer">
+            <Tooltip title="LS Health And Nutrition" placement="right" arrow>
               <img
-                src={healthAndNutritionIMG}
+                src={healthAndNutritionIMGLS}
                 alt="Health And Nutrition"
                 className="box"
               />
@@ -32,15 +54,16 @@ function App() {
           </a>
           <span className="span">
             Done by: Ahmad Koujan, Daniel Richani, Hadi Tarhini, Mohamad Ali
-            Dika, Saied Kachmar.
+            Dika, Saied Kachmar. (LS)
           </span>
         </div>
 
+        {/* Human Rights And Value */}
         <div className="div_box z2">
-          <a href={humanRightsAndValue} target="_blank" rel="noreferrer">
-            <Tooltip title="Human Rights And Value" placement="right" arrow>
+          <a href={humanRightsAndValueLS} target="_blank" rel="noreferrer">
+            <Tooltip title="LS Human Rights And Value" placement="right" arrow>
               <img
-                src={humanRightsAndValueIMG}
+                src={humanRightsAndValueIMGLS}
                 alt="Human Rights And Value"
                 className="box"
               />
@@ -48,15 +71,26 @@ function App() {
           </a>
           <span className="span">
             Done by: Adam Sahili, Leen Nasser, RaghadAl Agha, Rawan Ismail,
-            SamiaAl Rayyis.
+            SamiaAl Rayyis. (LS)
           </span>
         </div>
 
         <div className="div_box z2">
-          <a href={naturalPhenomena} target="_blank" rel="noreferrer">
-            <Tooltip title="Natural Phenomena" placement="right" arrow>
+          <a href={humanvaluesGS} target="_blank" rel="noreferrer">
+            <Tooltip title="GS Human Values" placement="right" arrow>
+              <img src={humanvaluesIMGGS} alt="Teenagers" className="box" />
+            </Tooltip>
+          </a>
+          <span className="span">Done by: (GS)</span>
+        </div>
+
+        {/* Natural Phenomena */}
+
+        <div className="div_box z2">
+          <a href={naturalPhenomenaLS} target="_blank" rel="noreferrer">
+            <Tooltip title="LS Natural Phenomena" placement="right" arrow>
               <img
-                src={naturalPhenomenaIMG}
+                src={naturalPhenomenaIMGLS}
                 alt="Natural Phenomena"
                 className="box"
               />
@@ -64,20 +98,31 @@ function App() {
           </a>
           <span className="span">
             Done by: Carlos Harb, Lea Khamis, Reina Nader, Yousif Sakour, Zeina
-            Makki.
+            Makki. (LS)
           </span>
         </div>
 
+        {/* Teenagers */}
+
         <div className="div_box z2">
-          <a href={teenagers} target="_blank" rel="noreferrer">
-            <Tooltip title="Teenagers" placement="right" arrow>
-              <img src={teenagersIMG} alt="Teenagers" className="box" />
+          <a href={teenagersLS} target="_blank" rel="noreferrer">
+            <Tooltip title="LS Teenagers" placement="right" arrow>
+              <img src={teenagersIMGLS} alt="Teenagers" className="box" />
             </Tooltip>
           </a>
           <span className="span">
             Done by: Celine Sidani, Diana Sibaee, Karim Daaboul, Karim Mayassi,
-            Leen Abou Mosleh, Majd Hammoud.
+            Leen Abou Mosleh, Majd Hammoud. (LS)
           </span>
+        </div>
+
+        <div className="div_box z2">
+          <a href={teenagersGS} target="_blank" rel="noreferrer">
+            <Tooltip title="GS Teenagers" placement="right" arrow>
+              <img src={teenagersIMGGS} alt="Teenagers" className="box" />
+            </Tooltip>
+          </a>
+          <span className="span">Done by: Dalia Saab, Nagham Okaily. (GS)</span>
         </div>
       </section>
     </>
