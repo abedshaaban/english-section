@@ -1,6 +1,11 @@
 import "./App.css";
+import Footer from "./Footer";
 import Tooltip from "@mui/material/Tooltip";
 // LS
+
+import democracyLS from "./presentations/LS/democracy.pdf";
+import democracyIMGLS from "./presentations/LS/img/democracy.PNG";
+
 import healthAndNutritionLS from "./presentations/LS/Health-and-Nutrition.pdf";
 import healthAndNutritionIMGLS from "./presentations/LS/img/health-and-nutrition.PNG";
 
@@ -45,6 +50,17 @@ function App() {
             </Tooltip>
           </a>
           <span className="span">Done by: (GS)</span>
+        </div>
+
+        <div className="div_box z2">
+          <a href={democracyLS} target="_blank" rel="noreferrer">
+            <Tooltip title="LS Democracy" placement="right" arrow>
+              <img src={democracyIMGLS} alt="Democracy" className="box" />
+            </Tooltip>
+          </a>
+          <span className="span">
+            Done by: Farah Husseini, Rawan Sleiman. (LS)
+          </span>
         </div>
 
         {/* Health And Nutrition LS GS */}
@@ -155,6 +171,7 @@ function App() {
           <span className="span">Done by: Dalia Saab, Nagham Okaily. (GS)</span>
         </div>
       </section>
+      <Footer />
     </>
   );
 }
