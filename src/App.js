@@ -23,6 +23,12 @@ import humanvaluesIMGGS from "./presentations/GS/img/human-values.PNG";
 import teenagersGS from "./presentations/GS/teenagers.pdf";
 import teenagersIMGGS from "./presentations/GS/img/teenagers.PNG";
 
+import technologyGS from "./presentations/GS/technology.pdf";
+import technologyIMGGS from "./presentations/GS/img/technology.PNG";
+
+import humanrightsGS from "./presentations/GS/human-rights.pdf";
+import humanrightsIMGGS from "./presentations/GS/img/human-rights.PNG";
+
 function App() {
   return (
     <>
@@ -76,6 +82,17 @@ function App() {
         </div>
 
         <div className="div_box z2">
+          <a href={humanrightsGS} target="_blank" rel="noreferrer">
+            <Tooltip title="GS Human Rights" placement="right" arrow>
+              <img src={humanrightsIMGGS} alt="Teenagers" className="box" />
+            </Tooltip>
+          </a>
+          <span className="span">
+            Done by: Aya Wehbe, Julia Ayoub, Rawan Haidar. (GS)
+          </span>
+        </div>
+
+        <div className="div_box z2">
           <a href={humanvaluesGS} target="_blank" rel="noreferrer">
             <Tooltip title="GS Human Values" placement="right" arrow>
               <img src={humanvaluesIMGGS} alt="Teenagers" className="box" />
@@ -99,6 +116,19 @@ function App() {
           <span className="span">
             Done by: Carlos Harb, Lea Khamis, Reina Nader, Yousif Sakour, Zeina
             Makki. (LS)
+          </span>
+        </div>
+
+        {/* Technology */}
+
+        <div className="div_box z2">
+          <a href={technologyGS} target="_blank" rel="noreferrer">
+            <Tooltip title="GS Technology" placement="right" arrow>
+              <img src={technologyIMGGS} alt="Technology" className="box" />
+            </Tooltip>
+          </a>
+          <span className="span">
+            Done by: Adib Shaaban, Hadi Lahham, Haidar Sharaf, Jawad Karim. (GS)
           </span>
         </div>
 

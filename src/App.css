@@ -64,11 +64,14 @@ body {
   );
 
   /* height: 100vh; */
-  height: auto;
+  /* height: auto; */
+
+  background-size: 10000vh 10000vh;
+
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (max-width: 768px) {
   body{
-    height: 100vh;
+    /* height: 100vh; */
   }
 }
 
