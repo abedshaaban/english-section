@@ -1,6 +1,8 @@
 import "./App.css";
-import Footer from "./Footer";
 import Tooltip from "@mui/material/Tooltip";
+import Footer from "./Components/Footer";
+import Header from "./Components/Header";
+
 // LS
 
 import democracyLS from "./presentations/LS/democracy.pdf";
@@ -37,6 +39,7 @@ import humanrightsIMGGS from "./presentations/GS/img/human-rights.PNG";
 function App() {
   return (
     <>
+      <Header />
       <div className="bodyball z1">
         <div class="ball"></div>
       </div>

@@ -1,4 +1,4 @@
-import "./Footer.css";
+import "./Styles/Footer.css";
 
 function Footer() {
   return (
@@ -6,7 +6,9 @@ function Footer() {
       <section className="footer_S">
         <section className="S_community">
           <span>Resources:</span>
-          <a href="https://student-affair.netlify.app/#/12" target="_blank">go to resources</a>
+          <a href="https://student-affair.netlify.app/#/12" target="_blank">
+            go to resources
+          </a>
         </section>
 
         <section className="S_community">
