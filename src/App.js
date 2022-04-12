@@ -13,6 +13,8 @@ import Tab from "@mui/material/Tab";
 import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
 import All from "./Sections/All";
+import GS from "./Sections/GS";
+import LS from "./Sections/LS";
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -114,30 +116,21 @@ function App() {
             axis={theme.direction === "rtl" ? "x-reverse" : "x"}
             index={value}
             onChangeIndex={handleChangeIndex}
-            sx={{
-              width: "100%",
-            }}
           >
-            <TabPanel
-              value={value}
-              index={0}
-              dir={theme.direction}
-              sx={{
-                width: "100%",
-                display: "flex",
-                justifyContent: "center",
-              }}
-            >
+            <TabPanel value={value} index={0} dir={theme.direction}>
               <All />
             </TabPanel>
+
             <TabPanel value={value} index={1} dir={theme.direction}>
-              2
+              <GS />
             </TabPanel>
+
             <TabPanel value={value} index={2} dir={theme.direction}>
-              3
+              <LS />
             </TabPanel>
+
             <TabPanel value={value} index={3} dir={theme.direction}>
-              4
+              Coming soon :/
             </TabPanel>
           </SwipeableViews>
         </Box>
