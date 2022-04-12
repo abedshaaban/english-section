@@ -6,7 +6,7 @@ function Footer() {
       <section className="footer_S">
         <section className="S_community">
           <span>Resources:</span>
-          <a href="https://student-affair.netlify.app/#/12" target="_blank">
+          <a href="https://student-affair.netlify.app/#/12" target="_blank" rel="noreferrer">
             go to resources
           </a>
         </section>
