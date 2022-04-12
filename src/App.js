@@ -1,178 +1,146 @@
 import "./App.css";
-import Tooltip from "@mui/material/Tooltip";
 import Footer from "./Components/Footer";
 import Header from "./Components/Header";
 
-// LS
+//
+import { useState } from "react";
 
-import democracyLS from "./presentations/LS/democracy.pdf";
-import democracyIMGLS from "./presentations/LS/img/democracy.PNG";
+import PropTypes from "prop-types";
+import SwipeableViews from "react-swipeable-views";
+import { useTheme } from "@mui/material/styles";
+import Tabs from "@mui/material/Tabs";
+import Tab from "@mui/material/Tab";
+import Typography from "@mui/material/Typography";
+import Box from "@mui/material/Box";
+import All from "./Sections/All";
 
-import healthAndNutritionLS from "./presentations/LS/Health-and-Nutrition.pdf";
-import healthAndNutritionIMGLS from "./presentations/LS/img/health-and-nutrition.PNG";
+function TabPanel(props) {
+  const { children, value, index, ...other } = props;
 
-import humanRightsAndValueLS from "./presentations/LS/Human-Rights-and-Values.pdf";
-import humanRightsAndValueIMGLS from "./presentations/LS/img/human-rights-and-values.PNG";
+  return (
+    <div
+      role="tabpanel"
+      hidden={value !== index}
+      id={`full-width-tabpanel-${index}`}
+      aria-labelledby={`full-width-tab-${index}`}
+      {...other}
+    >
+      {value === index && (
+        <Box sx={{ p: 3 }}>
+          <Typography>{children}</Typography>
+        </Box>
+      )}
+    </div>
+  );
+}
 
-import naturalPhenomenaLS from "./presentations/LS/natural-phenomena.pdf";
-import naturalPhenomenaIMGLS from "./presentations/LS/img/natural-phenomena.PNG";
+TabPanel.propTypes = {
+  children: PropTypes.node,
+  index: PropTypes.number.isRequired,
+  value: PropTypes.number.isRequired,
+};
 
-import teenagersLS from "./presentations/LS/teenagers.pdf";
-import teenagersIMGLS from "./presentations/LS/img/teenagers.PNG";
-
-// GS
-import democracyGS from "./presentations/GS/democracy.pdf";
-import democracyIMGGS from "./presentations/GS/img/democracy.PNG";
-
-import humanvaluesGS from "./presentations/GS/human-values.pdf";
-import humanvaluesIMGGS from "./presentations/GS/img/human-values.PNG";
-
-import teenagersGS from "./presentations/GS/teenagers.pdf";
-import teenagersIMGGS from "./presentations/GS/img/teenagers.PNG";
-
-import technologyGS from "./presentations/GS/technology.pdf";
-import technologyIMGGS from "./presentations/GS/img/technology.PNG";
-
-import humanrightsGS from "./presentations/GS/human-rights.pdf";
-import humanrightsIMGGS from "./presentations/GS/img/human-rights.PNG";
+function a11yProps(index) {
+  return {
+    id: `full-width-tab-${index}`,
+    "aria-controls": `full-width-tabpanel-${index}`,
+  };
+}
 
 function App() {
+  const theme = useTheme();
+  const [value, setValue] = useState(0);
+
+  const handleChange = (event, newValue) => {
+    setValue(newValue);
+  };
+
+  const handleChangeIndex = (index) => {
+    setValue(index);
+  };
   return (
     <>
       <Header />
       <div className="bodyball z1">
-        <div class="ball"></div>
+        <div className="ball"></div>
       </div>
+
       <section className="S">
-        {/* democracy LS GS */}
+        <Box
+          className="z2"
+          sx={{
+            width: "100%",
+            display: "flex",
+            justifyContent: "center",
+            flexDirection: "column",
+          }}
+        >
+          <Tabs
+            value={value}
+            onChange={handleChange}
+            textColor="secondary"
+            indicatorColor="secondary"
+            aria-label="secondary tabs example"
+            centered
+          >
+            <Tab
+              sx={{ color: "white", fontSize: "20px", fontWeight: "900" }}
+              value={Number("0")}
+              label="all"
+              {...a11yProps(0)}
+            />
+            <Tab
+              sx={{ color: "white", fontSize: "20px", fontWeight: "900" }}
+              value={Number("1")}
+              label="GS"
+              {...a11yProps(1)}
+            />
+            <Tab
+              sx={{ color: "white", fontSize: "20px", fontWeight: "900" }}
+              value={Number("2")}
+              label="LS"
+              {...a11yProps(2)}
+            />
+            <Tab
+              sx={{ color: "white", fontSize: "20px", fontWeight: "900" }}
+              value={Number("3")}
+              label="SE"
+              {...a11yProps(3)}
+            />
+          </Tabs>
 
-        <div className="div_box z2">
-          <a href={democracyGS} target="_blank" rel="noreferrer">
-            <Tooltip title="GS Democracy" placement="right" arrow>
-              <img src={democracyIMGGS} alt="Teenagers" className="box" />
-            </Tooltip>
-          </a>
-          <span className="span">Done by: (GS)</span>
-        </div>
-
-        <div className="div_box z2">
-          <a href={democracyLS} target="_blank" rel="noreferrer">
-            <Tooltip title="LS Democracy" placement="right" arrow>
-              <img src={democracyIMGLS} alt="Democracy" className="box" />
-            </Tooltip>
-          </a>
-          <span className="span">
-            Done by: Farah Husseini, Rawan Sleiman. (LS)
-          </span>
-        </div>
-
-        {/* Health And Nutrition LS GS */}
-        <div className="div_box z2">
-          <a href={healthAndNutritionLS} target="_blank" rel="noreferrer">
-            <Tooltip title="LS Health And Nutrition" placement="right" arrow>
-              <img
-                src={healthAndNutritionIMGLS}
-                alt="Health And Nutrition"
-                className="box"
-              />
-            </Tooltip>
-          </a>
-          <span className="span">
-            Done by: Ahmad Koujan, Daniel Richani, Hadi Tarhini, Mohamad Ali
-            Dika, Saied Kachmar. (LS)
-          </span>
-        </div>
-
-        {/* Human Rights And Value */}
-        <div className="div_box z2">
-          <a href={humanRightsAndValueLS} target="_blank" rel="noreferrer">
-            <Tooltip title="LS Human Rights And Value" placement="right" arrow>
-              <img
-                src={humanRightsAndValueIMGLS}
-                alt="Human Rights And Value"
-                className="box"
-              />
-            </Tooltip>
-          </a>
-          <span className="span">
-            Done by: Adam Sahili, Leen Nasser, RaghadAl Agha, Rawan Ismail,
-            SamiaAl Rayyis. (LS)
-          </span>
-        </div>
-
-        <div className="div_box z2">
-          <a href={humanrightsGS} target="_blank" rel="noreferrer">
-            <Tooltip title="GS Human Rights" placement="right" arrow>
-              <img src={humanrightsIMGGS} alt="Teenagers" className="box" />
-            </Tooltip>
-          </a>
-          <span className="span">
-            Done by: Aya Wehbe, Julia Ayoub, Rawan Haidar. (GS)
-          </span>
-        </div>
-
-        <div className="div_box z2">
-          <a href={humanvaluesGS} target="_blank" rel="noreferrer">
-            <Tooltip title="GS Human Values" placement="right" arrow>
-              <img src={humanvaluesIMGGS} alt="Teenagers" className="box" />
-            </Tooltip>
-          </a>
-          <span className="span">Done by: (GS)</span>
-        </div>
-
-        {/* Natural Phenomena */}
-
-        <div className="div_box z2">
-          <a href={naturalPhenomenaLS} target="_blank" rel="noreferrer">
-            <Tooltip title="LS Natural Phenomena" placement="right" arrow>
-              <img
-                src={naturalPhenomenaIMGLS}
-                alt="Natural Phenomena"
-                className="box"
-              />
-            </Tooltip>
-          </a>
-          <span className="span">
-            Done by: Carlos Harb, Lea Khamis, Reina Nader, Yousif Sakour, Zeina
-            Makki. (LS)
-          </span>
-        </div>
-
-        {/* Technology */}
-
-        <div className="div_box z2">
-          <a href={technologyGS} target="_blank" rel="noreferrer">
-            <Tooltip title="GS Technology" placement="right" arrow>
-              <img src={technologyIMGGS} alt="Technology" className="box" />
-            </Tooltip>
-          </a>
-          <span className="span">
-            Done by: Adib Shaaban, Hadi Lahham, Haidar Sharaf, Jawad Karim. (GS)
-          </span>
-        </div>
-
-        {/* Teenagers */}
-
-        <div className="div_box z2">
-          <a href={teenagersLS} target="_blank" rel="noreferrer">
-            <Tooltip title="LS Teenagers" placement="right" arrow>
-              <img src={teenagersIMGLS} alt="Teenagers" className="box" />
-            </Tooltip>
-          </a>
-          <span className="span">
-            Done by: Celine Sidani, Diana Sibaee, Karim Daaboul, Karim Mayassi,
-            Leen Abou Mosleh, Majd Hammoud. (LS)
-          </span>
-        </div>
-
-        <div className="div_box z2">
-          <a href={teenagersGS} target="_blank" rel="noreferrer">
-            <Tooltip title="GS Teenagers" placement="right" arrow>
-              <img src={teenagersIMGGS} alt="Teenagers" className="box" />
-            </Tooltip>
-          </a>
-          <span className="span">Done by: Dalia Saab, Nagham Okaily. (GS)</span>
-        </div>
+          <SwipeableViews
+            className="z2"
+            axis={theme.direction === "rtl" ? "x-reverse" : "x"}
+            index={value}
+            onChangeIndex={handleChangeIndex}
+            sx={{
+              width: "100%",
+            }}
+          >
+            <TabPanel
+              value={value}
+              index={0}
+              dir={theme.direction}
+              sx={{
+                width: "100%",
+                display: "flex",
+                justifyContent: "center",
+              }}
+            >
+              <All />
+            </TabPanel>
+            <TabPanel value={value} index={1} dir={theme.direction}>
+              2
+            </TabPanel>
+            <TabPanel value={value} index={2} dir={theme.direction}>
+              3
+            </TabPanel>
+            <TabPanel value={value} index={3} dir={theme.direction}>
+              4
+            </TabPanel>
+          </SwipeableViews>
+        </Box>
       </section>
       <Footer />
     </>
