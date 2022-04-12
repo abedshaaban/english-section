@@ -29,7 +29,9 @@ const GS = () => {
             <img src={democracyIMGGS} alt="Teenagers" className="box" />
           </Tooltip>
         </a>
-        <span className="span">Done by: (GS)</span>
+        <span className="span">
+          Done by: Lama Ghanem, Mohammad Jawad Wehbe, Zeina Merchad.
+        </span>
       </div>
 
       <div className="div_box z2">
@@ -39,7 +41,7 @@ const GS = () => {
           </Tooltip>
         </a>
         <span className="span">
-          Done by: Aya Wehbe, Julia Ayoub, Rawan Haidar. (GS)
+          Done by: Aya Wehbe, Julia Ayoub, Rawan Haidar.
         </span>
       </div>
 
@@ -49,7 +51,7 @@ const GS = () => {
             <img src={teenagersIMGGS} alt="Teenagers" className="box" />
           </Tooltip>
         </a>
-        <span className="span">Done by: Dalia Saab, Nagham Okaily. (GS)</span>
+        <span className="span">Done by: Dalia Saab, Nagham Okaily.</span>
       </div>
 
       <div className="div_box z2">
@@ -59,7 +61,7 @@ const GS = () => {
           </Tooltip>
         </a>
         <span className="span">
-          Done by: Adib Shaaban, Hadi Lahham, Haidar Sharaf, Jawad Karim. (GS)
+          Done by: Adib Shaaban, Hadi Lahham, Haidar Sharaf, Jawad Karim.
         </span>
       </div>
 
@@ -69,7 +71,9 @@ const GS = () => {
             <img src={humanvaluesIMGGS} alt="Teenagers" className="box" />
           </Tooltip>
         </a>
-        <span className="span">Done by: (GS)</span>
+        <span className="span">
+          Done by: Khalil Salaheddine, Mohammad Swied, Rim Khattar.
+        </span>
       </div>
     </section>
   );

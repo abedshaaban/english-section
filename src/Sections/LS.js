@@ -29,9 +29,7 @@ const LS = () => {
             <img src={democracyIMGLS} alt="Democracy" className="box" />
           </Tooltip>
         </a>
-        <span className="span">
-          Done by: Farah Husseini, Rawan Sleiman. (LS)
-        </span>
+        <span className="span">Done by: Farah Husseini, Rawan Sleiman.</span>
       </div>
       <div className="div_box z2">
         <a href={healthAndNutritionLS} target="_blank" rel="noreferrer">
@@ -44,8 +42,8 @@ const LS = () => {
           </Tooltip>
         </a>
         <span className="span">
-          Done by: Ahmad Koujan, Daniel Richani, Hadi Tarhini, Mohamad Ali Dika,
-          Saied Kachmar. (LS)
+          Done by: Ahmad Koujan, Daniel Richani, Hadi Tarhini, Mohammad Ali
+          Dika, Saied Kachmar.
         </span>
       </div>
       {/* Human Rights And Value */}
@@ -60,8 +58,8 @@ const LS = () => {
           </Tooltip>
         </a>
         <span className="span">
-          Done by: Adam Sahili, Leen Nasser, RaghadAl Agha, Rawan Ismail,
-          SamiaAl Rayyis. (LS)
+          Done by: Adam Sahili, Leen Nasser, Raghad Al Agha, Rawan Ismail, Samia
+          Al Rayyis.
         </span>
       </div>
 
@@ -77,7 +75,7 @@ const LS = () => {
         </a>
         <span className="span">
           Done by: Carlos Harb, Lea Khamis, Reina Nader, Yousif Sakour, Zeina
-          Makki. (LS)
+          Makki.
         </span>
       </div>
 
@@ -89,7 +87,7 @@ const LS = () => {
         </a>
         <span className="span">
           Done by: Celine Sidani, Diana Sibaee, Karim Daaboul, Karim Mayassi,
-          Leen Abou Mosleh, Majd Hammoud. (LS)
+          Leen Abou Mosleh, Majd Hammoud.
         </span>
       </div>
     </section>

@@ -71,8 +71,8 @@ const All = () => {
           </Tooltip>
         </a>
         <span className="span">
-          Done by: Ahmad Koujan, Daniel Richani, Hadi Tarhini, Mohamad Ali Dika,
-          Saied Kachmar. (LS)
+          Done by: Ahmad Koujan, Daniel Richani, Hadi Tarhini, Mohammad Ali
+          Dika, Saied Kachmar. (LS)
         </span>
       </div>
       {/* Human Rights And Value */}
@@ -87,8 +87,8 @@ const All = () => {
           </Tooltip>
         </a>
         <span className="span">
-          Done by: Adam Sahili, Leen Nasser, RaghadAl Agha, Rawan Ismail,
-          SamiaAl Rayyis. (LS)
+          Done by: Adam Sahili, Leen Nasser, Raghad Al Agha, Rawan Ismail, Samia
+          Al Rayyis. (LS)
         </span>
       </div>
       <div className="div_box z2">
@@ -107,7 +107,9 @@ const All = () => {
             <img src={humanvaluesIMGGS} alt="Teenagers" className="box" />
           </Tooltip>
         </a>
-        <span className="span">Done by: (GS)</span>
+        <span className="span">
+          Done by: Khalil Salaheddine, Mohammad Swied, Rim Khattar. (GS)
+        </span>
       </div>
       {/* Natural Phenomena */}
       <div className="div_box z2">
