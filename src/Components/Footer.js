@@ -20,6 +20,7 @@ function Footer() {
 
         <section className="S_community">
           <span>Community:</span>
+          <Link to="/about">about</Link>
           <Link to="/contact-us">contact us</Link>
           <span>terms & conditions</span>
           <span>privacy</span>
