@@ -11,14 +11,16 @@ import humanRightsAndValueIMGLS from "../presentations/LS/img/human-rights-and-v
 import naturalPhenomenaLS from "../presentations/LS/natural-phenomena.pdf";
 import naturalPhenomenaIMGLS from "../presentations/LS/img/natural-phenomena.PNG";
 
+import technologyIMGLS from "../presentations/LS/img/technology.png";
+
 import teenagersLS from "../presentations/LS/teenagers.pdf";
 import teenagersIMGLS from "../presentations/LS/img/teenagers.PNG";
 
+//
+import "../App.css";
+
 //  mui
 import Tooltip from "@mui/material/Tooltip";
-
-// react
-import "../App.css";
 
 const LS = () => {
   return (
@@ -76,6 +78,16 @@ const LS = () => {
         <span className="span">
           Done by: Carlos Harb, Lea Khamis, Reina Nader, Yousif Sakour, Zeina
           Makki.
+        </span>
+      </div>
+      <div className="div_box z2">
+        <a href="https://techlow.netlify.app/" target="_blank" rel="noreferrer">
+          <Tooltip title="LS Technology" placement="right" arrow>
+            <img src={technologyIMGLS} alt="Technology" className="box" />
+          </Tooltip>
+        </a>
+        <span className="span">
+          Done by: Abed AL Ghani, Lara, Mohammad, Rein.
         </span>
       </div>
 

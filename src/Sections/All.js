@@ -11,6 +11,8 @@ import humanRightsAndValueIMGLS from "../presentations/LS/img/human-rights-and-v
 import naturalPhenomenaLS from "../presentations/LS/natural-phenomena.pdf";
 import naturalPhenomenaIMGLS from "../presentations/LS/img/natural-phenomena.PNG";
 
+import technologyIMGLS from "../presentations/LS/img/technology.png";
+
 import teenagersLS from "../presentations/LS/teenagers.pdf";
 import teenagersIMGLS from "../presentations/LS/img/teenagers.PNG";
 
@@ -35,7 +37,6 @@ import Tooltip from "@mui/material/Tooltip";
 
 // react
 import "../App.css";
-import RingLoader from "react-spinners/BarLoader";
 
 const All = () => {
   return (
@@ -136,6 +137,17 @@ const All = () => {
         </a>
         <span className="span">
           Done by: Adib Shaaban, Hadi Lahham, Haidar Sharaf, Jawad Karim. (GS)
+        </span>
+      </div>
+
+      <div className="div_box z2">
+        <a href="https://techlow.netlify.app/" target="_blank" rel="noreferrer">
+          <Tooltip title="LS Technology" placement="right" arrow>
+            <img src={technologyIMGLS} alt="Technology" className="box" />
+          </Tooltip>
+        </a>
+        <span className="span">
+          Done by: Abed AL Ghani, Lara, Mohammad, Rein. (LS)
         </span>
       </div>
       {/* Teenagers */}
