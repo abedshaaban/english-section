@@ -2,6 +2,9 @@
 import democracyLS from "../presentations/LS/democracy.pdf";
 import democracyIMGLS from "../presentations/LS/img/democracy.PNG";
 
+import environmentLS from "../presentations/LS/environment.pdf";
+import environmentIMGLS from "../presentations/LS/img/environment.PNG";
+
 import healthAndNutritionLS from "../presentations/LS/Health-and-Nutrition.pdf";
 import healthAndNutritionIMGLS from "../presentations/LS/img/health-and-nutrition.PNG";
 
@@ -48,7 +51,9 @@ const All = () => {
             <img src={democracyIMGGS} alt="Teenagers" className="box" />
           </Tooltip>
         </a>
-        <span className="span">Done by: (GS)</span>
+        <span className="span">
+          Done by: Lama Ghanem, Mohammad Jawad Wehbe, Zeina Merchad. (GS)
+        </span>
       </div>
       <div className="div_box z2">
         <a href={democracyLS} target="_blank" rel="noreferrer">
@@ -58,6 +63,20 @@ const All = () => {
         </a>
         <span className="span">
           Done by: Farah Husseini, Rawan Sleiman. (LS)
+        </span>
+      </div>
+
+      {/* environment LS GS */}
+
+      <div className="div_box z2">
+        <a href={environmentLS} target="_blank" rel="noreferrer">
+          <Tooltip title="LS Environment" placement="right" arrow>
+            <img src={environmentIMGLS} alt="Environment" className="box" />
+          </Tooltip>
+        </a>
+        <span className="span">
+          <span style={{ color: "red" }}>* </span>
+          Done by: Yara al Israwi, Yara Tarabay, Yasmina Nawfal. (LS)
         </span>
       </div>
       {/* Health And Nutrition LS GS */}
@@ -124,8 +143,8 @@ const All = () => {
           </Tooltip>
         </a>
         <span className="span">
-          Done by: Carlos Harb, Lea Khamis, Reina Nader, Yousif Sakour, Zeina
-          Makki. (LS)
+          <span style={{ color: "red" }}>* </span> Done by: Carlos Harb, Lea
+          Khamis, Reina Nader, Yousif Sakour, Zeina Makki. (LS)
         </span>
       </div>
       {/* Technology */}
@@ -136,7 +155,8 @@ const All = () => {
           </Tooltip>
         </a>
         <span className="span">
-          Done by: Adib Shaaban, Hadi Lahham, Haidar Sharaf, Jawad Karim. (GS)
+          <span style={{ color: "red" }}>* </span>Done by: Adib Shaaban, Hadi
+          Lahham, Haidar Sharaf, Jawad Karim. (GS)
         </span>
       </div>
 
@@ -147,10 +167,23 @@ const All = () => {
           </Tooltip>
         </a>
         <span className="span">
-          Done by: Abed AL Ghani, Lara, Mohammad, Rein. (LS)
+          <span style={{ color: "red" }}>* </span>Done by: Abed AL Ghani, Lara,
+          Mohammad, Rein. (LS)
         </span>
       </div>
       {/* Teenagers */}
+      <div className="div_box z2">
+        <a href={teenagersGS} target="_blank" rel="noreferrer">
+          <Tooltip title="GS Teenagers" placement="right" arrow>
+            <img src={teenagersIMGGS} alt="Teenagers" className="box" />
+          </Tooltip>
+        </a>
+        <span className="span">
+          <span style={{ color: "red" }}>* </span>Done by: Dalia Saab, Nagham
+          Okaily. (GS)
+        </span>
+      </div>
+
       <div className="div_box z2">
         <a href={teenagersLS} target="_blank" rel="noreferrer">
           <Tooltip title="LS Teenagers" placement="right" arrow>
@@ -158,17 +191,10 @@ const All = () => {
           </Tooltip>
         </a>
         <span className="span">
-          Done by: Celine Sidani, Diana Sibaee, Karim Daaboul, Karim Mayassi,
-          Leen Abou Mosleh, Majd Hammoud. (LS)
+          <span style={{ color: "red" }}>* </span>Done by: Celine Sidani, Diana
+          Sibaee, Karim Daaboul, Karim Mayassi, Leen Abou Mosleh, Majd Hammoud.
+          (LS)
         </span>
-      </div>
-      <div className="div_box z2">
-        <a href={teenagersGS} target="_blank" rel="noreferrer">
-          <Tooltip title="GS Teenagers" placement="right" arrow>
-            <img src={teenagersIMGGS} alt="Teenagers" className="box" />
-          </Tooltip>
-        </a>
-        <span className="span">Done by: Dalia Saab, Nagham Okaily. (GS)</span>
       </div>
     </section>
   );

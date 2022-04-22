@@ -64,6 +64,17 @@ export const Home = () => {
       <div className="bodyball z1">
         <div className="ball"></div>
       </div>
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "flex-end",
+          paddingRight: "20px",
+          paddingTop: "13px",
+        }}
+      >
+        <span style={{ color: "red", paddingRight: "5px" }}>*</span>
+        required for official exams
+      </div>
       <section className="S">
         <Box
           className="z2"

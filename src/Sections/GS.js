@@ -46,22 +46,26 @@ const GS = () => {
       </div>
 
       <div className="div_box z2">
-        <a href={teenagersGS} target="_blank" rel="noreferrer">
-          <Tooltip title="GS Teenagers" placement="right" arrow>
-            <img src={teenagersIMGGS} alt="Teenagers" className="box" />
-          </Tooltip>
-        </a>
-        <span className="span">Done by: Dalia Saab, Nagham Okaily.</span>
-      </div>
-
-      <div className="div_box z2">
         <a href={technologyGS} target="_blank" rel="noreferrer">
           <Tooltip title="GS Technology" placement="right" arrow>
             <img src={technologyIMGGS} alt="Technology" className="box" />
           </Tooltip>
         </a>
         <span className="span">
-          Done by: Adib Shaaban, Hadi Lahham, Haidar Sharaf, Jawad Karim.
+          <span style={{ color: "red" }}>* </span>Done by: Adib Shaaban, Hadi
+          Lahham, Haidar Sharaf, Jawad Karim.
+        </span>
+      </div>
+
+      <div className="div_box z2">
+        <a href={teenagersGS} target="_blank" rel="noreferrer">
+          <Tooltip title="GS Teenagers" placement="right" arrow>
+            <img src={teenagersIMGGS} alt="Teenagers" className="box" />
+          </Tooltip>
+        </a>
+        <span className="span">
+          <span style={{ color: "red" }}>* </span>Done by: Dalia Saab, Nagham
+          Okaily.
         </span>
       </div>
 

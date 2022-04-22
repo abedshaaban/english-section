@@ -2,6 +2,9 @@
 import democracyLS from "../presentations/LS/democracy.pdf";
 import democracyIMGLS from "../presentations/LS/img/democracy.PNG";
 
+import environmentLS from "../presentations/LS/environment.pdf";
+import environmentIMGLS from "../presentations/LS/img/environment.PNG";
+
 import healthAndNutritionLS from "../presentations/LS/Health-and-Nutrition.pdf";
 import healthAndNutritionIMGLS from "../presentations/LS/img/health-and-nutrition.PNG";
 
@@ -33,6 +36,19 @@ const LS = () => {
         </a>
         <span className="span">Done by: Farah Husseini, Rawan Sleiman.</span>
       </div>
+
+      <div className="div_box z2">
+        <a href={environmentLS} target="_blank" rel="noreferrer">
+          <Tooltip title="LS Environment" placement="right" arrow>
+            <img src={environmentIMGLS} alt="Environment" className="box" />
+          </Tooltip>
+        </a>
+        <span className="span">
+          <span style={{ color: "red" }}>* </span>
+          Done by: Yara al Israwi, Yara Tarabay, Yasmina Nawfal.
+        </span>
+      </div>
+
       <div className="div_box z2">
         <a href={healthAndNutritionLS} target="_blank" rel="noreferrer">
           <Tooltip title="LS Health And Nutrition" placement="right" arrow>
@@ -76,6 +92,7 @@ const LS = () => {
           </Tooltip>
         </a>
         <span className="span">
+          <span style={{ color: "red" }}>* </span>
           Done by: Carlos Harb, Lea Khamis, Reina Nader, Yousif Sakour, Zeina
           Makki.
         </span>
@@ -87,6 +104,7 @@ const LS = () => {
           </Tooltip>
         </a>
         <span className="span">
+          <span style={{ color: "red" }}>* </span>
           Done by: Abed AL Ghani, Lara, Mohammad, Rein.
         </span>
       </div>
@@ -98,6 +116,7 @@ const LS = () => {
           </Tooltip>
         </a>
         <span className="span">
+          <span style={{ color: "red" }}>* </span>
           Done by: Celine Sidani, Diana Sibaee, Karim Daaboul, Karim Mayassi,
           Leen Abou Mosleh, Majd Hammoud.
         </span>
